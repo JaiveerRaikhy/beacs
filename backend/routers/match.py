@@ -13,8 +13,8 @@ if _REPO_ROOT not in sys.path:
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel
 
-from backend.db_adapter import get_all_mentees_dict, get_mentor_dict
-from backend.auth import get_user_id_from_request
+from db_adapter import get_all_mentees_dict, get_mentor_dict
+from auth import get_user_id_from_request
 
 router = APIRouter(prefix="/api", tags=["match"])
 

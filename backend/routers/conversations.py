@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel
 
-from backend.auth import get_user_id_from_request
+from auth import get_user_id_from_request
 
 router = APIRouter(prefix="/api", tags=["conversations"])
 

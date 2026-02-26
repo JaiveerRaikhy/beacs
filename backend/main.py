@@ -14,7 +14,7 @@ load_dotenv()  # Also allow repo root .env
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.routers import match, conversations
+from routers import match, conversations
 
 app = FastAPI(title="Beacon API", version="1.0.0")
 
